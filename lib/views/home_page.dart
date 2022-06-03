@@ -25,8 +25,7 @@ class _HomePageState extends State<HomePage> {
 
   getData() async {
     posts = await RemoteService().getPosts();
-    if (posts != null) ;
-    {
+    if (posts != null) {
       setState(() {
         isLoaded = true;
       });
@@ -66,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
